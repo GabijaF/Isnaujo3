@@ -33,7 +33,7 @@ double skaiciuotiGalutiniBala(const Studentas& studentas, bool naudotiVidurki) {
 }
 
 int main() {
-    
+    std::list<Studentas> studentai; 
 
     auto startReadFileTime = std::chrono::high_resolution_clock::now();
 
