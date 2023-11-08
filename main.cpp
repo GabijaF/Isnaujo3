@@ -45,8 +45,8 @@ int main() {
             return 1;
         }
 
-        auto endReadFileTime = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> readFileTime = endReadFileTime - startReadFileTime;
+        //auto endReadFileTime = std::chrono::high_resolution_clock::now();
+        //std::chrono::duration<double> readFileTime = endReadFileTime - startReadFileTime;
 
         std::string eilute;
         while (std::getline(inFile, eilute)) {
@@ -71,6 +71,9 @@ int main() {
         }
 
         inFile.close();
+        auto endReadFileTime = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> readFileTime = endReadFileTime - startReadFileTime;
+
 
         int studentCount = studentai.size();
         std::cout << "Studentu skaicius: " << studentCount << std::endl;
