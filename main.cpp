@@ -39,7 +39,7 @@ int main() {
 
         auto startReadFileTime = std::chrono::high_resolution_clock::now();
 
-        std::ifstream inFile("studentai1000000.txt");
+        std::ifstream inFile("studentai.txt");
         if (!inFile) {
             std::cerr << "Nepavyko atidaryti failo" << std::endl;
             return 1;
@@ -75,7 +75,7 @@ int main() {
         int studentCount = studentai.size();
         std::cout << "Studentu skaicius: " << studentCount << std::endl;
 
-        std::cout << "Failo nuskaitymas uztruko: " << readFileTime.count() << " sekundes" << std::endl;
+        std::cout << "Failo nuskaitymas su"<< studentCount << "studentais uztruko: " << readFileTime.count() << " sekundes" << std::endl;
 
         auto startCreateResultFileTime = std::chrono::high_resolution_clock::now();
 
