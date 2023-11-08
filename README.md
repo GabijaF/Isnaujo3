@@ -1,6 +1,9 @@
 # isnaujo
 nd
 
+
+kodas nuskaito faila, ir isveda 3 failus: rezultatai, ir surusiuotus vargsiukai ir galvociai.
+
 ![image](https://github.com/GabijaF/isnaujo/assets/145053488/bacde979-f099-4123-b80e-663fc8a98a38)
 
 1 bandymo laikas: 0.0156354 sekundes
