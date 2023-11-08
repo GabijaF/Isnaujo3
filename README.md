@@ -31,3 +31,10 @@ vidurkis bandymu: 0.8583158 sekundes
 2 bandymo laikas: 7.912809 sekundes
 3 bandymo laikas: 8.002299 sekundes
 vidurkis bandymu: 7.89045 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/587b45fa-b975-444f-a87c-b1f5ffd72894)
+
+1 bandymo laikas: 84.18996 sekundes
+2 bandymo laikas: 82.02033 sekundes
+3 bandymo laikas: 89.04493 sekundes
+vidurkis bandymu: 85.0850733333 sekundes
