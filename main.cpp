@@ -37,14 +37,15 @@ int main() {
 
     try {
 
-        auto startReadFileTime = std::chrono::high_resolution_clock::now();
 
-        std::ifstream inFile("studentai.txt");
+
+        std::ifstream inFile("studentai1000000.txt");
         if (!inFile) {
             std::cerr << "Nepavyko atidaryti failo" << std::endl;
             return 1;
         }
 
+        auto startReadFileTime = std::chrono::high_resolution_clock::now();
         //auto endReadFileTime = std::chrono::high_resolution_clock::now();
         //std::chrono::duration<double> readFileTime = endReadFileTime - startReadFileTime;
 
@@ -80,24 +81,9 @@ int main() {
 
         std::cout << "Failo nuskaitymas su"<< studentCount << "studentais uztruko: " << readFileTime.count() << " sekundes" << std::endl;
 
-        auto startCreateResultFileTime = std::chrono::high_resolution_clock::now();
 
-        std::ofstream rezultataiFile("rezultatai.txt");
         std::ofstream vargsiukaiFile("vargsiukai.txt");
         std::ofstream galvociaiFile("galvociai.txt");
-
-        auto endCreateResultFileTime = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> createResultFileTime = endCreateResultFileTime - startCreateResultFileTime;
-        std::cout << "Failo rezultatai.txt kurimas uztruko: " << createResultFileTime.count() << " sekundes" << std::endl;
-
-        auto startReadResultFileTime = std::chrono::high_resolution_clock::now();
-        std::ifstream readRezultataiFile("rezultatai.txt");
-        auto endReadResultFileTime = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> readResultFileTime = endReadResultFileTime - startReadResultFileTime;
-        std::cout << "Failo rezultatai.txt nuskaitymas uztruko: " << readResultFileTime.count() << " sekundes" << std::endl;
-
-        rezultataiFile << std::setw(15) << std::left << "Vardas" << std::setw(15) << std::left << "Pavardė" << std::setw(15) << std::right << "Galutinis (Vid.)"  << std::endl;
-        rezultataiFile << "---------------------------------------------------------------------" << std::endl;
 
         vargsiukaiFile << std::setw(15) << std::left << "Vardas" << std::setw(15) << std::left << "Pavardė" << std::setw(15) << std::right << "Galutinis (Vid.)" << std::endl;
         vargsiukaiFile << "---------------------------------------------------------------------" << std::endl;
@@ -110,7 +96,6 @@ int main() {
         for (const Studentas& studentas : studentai) {
             double galutinisBalasVidurkis = skaiciuotiGalutiniBala(studentas, true);
 
-            rezultataiFile << std::setw(15) << std::left << studentas.vardas << std::setw(15) << std::left << studentas.pavarde << std::setw(5) << std::fixed << std::setprecision(2) << std::right << galutinisBalasVidurkis  << std::endl;
 
             if (galutinisBalasVidurkis < 5.0) {
                 vargsiukaiFile << std::setw(15) << std::left << studentas.vardas << std::setw(15) << std::left << studentas.pavarde << std::setw(5) << std::fixed << std::setprecision(2) << std::right << galutinisBalasVidurkis << std::endl;
@@ -127,21 +112,29 @@ int main() {
         std::ifstream readGalvociaiFile("galvociai.txt");
 
         auto startWriteVargsiukaiTime = std::chrono::high_resolution_clock::now();
+
+        // Write vargsiukai data to the file
         for (const Studentas& studentas : studentai) {
-            double galutinisBalasVidurkis = skaiciuotiGalutiniBala(studentas, true);}
+            double galutinisBalasVidurkis = skaiciuotiGalutiniBala(studentas, true);
+        }
+
         auto endWriteVargsiukaiTime = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> writeVargsiukaiTime = endWriteVargsiukaiTime - startWriteVargsiukaiTime;
-        std::cout << "Failo isvedimas su" << studentCount << "studentais i vargsiukus uztruko: " << writeVargsiukaiTime.count() << " sekundes" << std::endl;
+        std::cout << "Failo isvedimas su " << studentCount << " studentais i vargsiukus uztruko: " << writeVargsiukaiTime.count() << " sekundes" << std::endl;
 
         auto startWriteGalvociaiTime = std::chrono::high_resolution_clock::now();
+
+        // Write galvociai data to the file
         for (const Studentas& studentas : studentai) {
-            double galutinisBalasVidurkis = skaiciuotiGalutiniBala(studentas, true);}
+            double galutinisBalasVidurkis = skaiciuotiGalutiniBala(studentas, true);
+        }
+
         auto endWriteGalvociaiTime = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> writeGalvociaiTime = endWriteGalvociaiTime - startWriteGalvociaiTime;
-        std::cout << "Failo isvedimas su" << studentCount << "studentais i galvociai uztruko: " << writeGalvociaiTime.count() << " sekundes" << std::endl;
+        std::cout << "Failo isvedimas su " << studentCount << " studentais i galvociai uztruko: " << writeGalvociaiTime.count() << " sekundes" << std::endl;
 
 
-        rezultataiFile.close();
+
         vargsiukaiFile.close();
         galvociaiFile.close();
 
