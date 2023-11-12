@@ -1,36 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <vector>
-#include <iomanip>
-#include <algorithm>
-#include <chrono>
-
-struct Studentas {
-    std::string vardas;
-    std::string pavarde;
-    std::vector<int> Nd;
-    int egz;
-};
-
-double skaiciuotiVidurki(const std::vector<int>& pazymiai) {
-    if (pazymiai.empty()) {
-        return 0.0;
-    }
-    double suma = 0.0;
-    for (int pazymys : pazymiai) {
-        suma += pazymys;
-    }
-    return suma / pazymiai.size();
-}
-
-
-double skaiciuotiGalutiniBala(const Studentas& studentas, bool naudotiVidurki) {
-    double NdBalas = skaiciuotiVidurki(studentas.Nd);
-    double galutinisBalas = (0.4 * NdBalas + 0.6 * studentas.egz);
-    return galutinisBalas;
-}
+#include "studentas.h"
 
 int main() {
     std::vector<Studentas> studentai;
@@ -39,15 +7,14 @@ int main() {
 
 
 
-        std::ifstream inFile("studentai1000000.txt");
+        std::ifstream inFile("studentai.txt");
         if (!inFile) {
             std::cerr << "Nepavyko atidaryti failo" << std::endl;
             return 1;
         }
 
         auto startReadFileTime = std::chrono::high_resolution_clock::now();
-        //auto endReadFileTime = std::chrono::high_resolution_clock::now();
-        //std::chrono::duration<double> readFileTime = endReadFileTime - startReadFileTime;
+        
 
         std::string eilute;
         while (std::getline(inFile, eilute)) {
