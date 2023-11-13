@@ -1,4 +1,4 @@
-Vardas         Pavardë              Galutinis
+Vardas         PavardÃ«              Galutinis
 ---------------------------------------------------------------------
 vardas1        pavarde1             8.00
 vardas2        pavarde2             7.00
