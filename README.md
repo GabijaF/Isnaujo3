@@ -19,33 +19,57 @@ Matuosime kiekviena konteinerį su 5 skirtingais failais po 3 kartus pagal vidur
 
 ## std::vector
 
-![282304717-71e70385-afad-44e5-9b22-8174f87a9419](https://github.com/GabijaF/isnaujo/assets/145053488/a70920c3-9047-4cea-aa15-e1568bd51ee1)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/ae041291-22f2-4c57-aadf-743f88352f88)
 
->Studentų rūšiavimą į dvi grupes: 0.00965106666 sekundes
->Grupiu įrašymas į failus: 0.0001688 sekundes
+Studentų rūšiavimą į dvi grupes: 0.00965106666 sekundes <br>
+Grupiu įrašymas į failus: 0.0001688 sekundes
 
-![282304731-ad588561-0792-405e-a3af-2c569d4e61ba](https://github.com/GabijaF/isnaujo/assets/145053488/f9bfd5ad-fa2b-4ed1-9476-e94c78b29335)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/5f0e53a0-27b0-4cd8-b0e8-5794c7469ba0)
 
->Studentų rūšiavimą į dvi grupes: 0.054231 sekundes
->Grupiu įrašymas į failus: 0.00336386666 sekundes
+Studentų rūšiavimą į dvi grupes: 0.054231 sekundes <br>
+Grupiu įrašymas į failus: 0.00336386666 sekundes
 
-![282304749-ac835221-9415-4c34-b6a1-b666c9549161](https://github.com/GabijaF/isnaujo/assets/145053488/b5aa8961-9e5e-4068-b71f-a860b6ddd30f)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/34585652-e1bb-4ff7-82a8-5b7303aa7f48)
 
->Studentų rūšiavimą į dvi grupes: 0.465106 sekundes
->Grupiu įrašymas į failus: 0.0699241 sekundes
+Studentų rūšiavimą į dvi grupes: 0.465106 sekundes <br>
+Grupiu įrašymas į failus: 0.0699241 sekundes
 
-![282304763-39f4934e-6867-4ab7-9d78-3c916f9dbc69](https://github.com/GabijaF/isnaujo/assets/145053488/2f827177-25ae-4873-ae71-bf1455e9818e)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/1cf892c4-9062-4726-a8ce-4ad40e2e6ef8)
 
->Studentų rūšiavimą į dvi grupes: 4.29436333333 sekundes
->Grupiu įrašymas į failus: 0.26172366666 sekundes
+Studentų rūšiavimą į dvi grupes: 4.29436333333 sekundes <br>
+Grupiu įrašymas į failus: 0.26172366666 sekundes
 
-![282304791-3cc7bb5e-87a2-4114-adeb-8250b544bf12](https://github.com/GabijaF/isnaujo/assets/145053488/626ea36c-c2eb-4e63-b56d-3042faaa0596)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/58a82b59-2c45-4f4d-b383-cdba6638bcb9)
 
->Studentų rūšiavimą į dvi grupes: 80.331 sekundes
->Grupiu įrašymas į failus: 4.75924666667 sekundes
+
+Studentų rūšiavimą į dvi grupes: 80.331 sekundes <br>
+Grupiu įrašymas į failus: 4.75924666667 sekundes
 ****
 
 
-##std::list
+## std::list
 
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/813bdc28-7693-426a-a244-991b3128ed27)
 
+>Studentų rūšiavimą į dvi grupes: 80.331 sekundes
+>Grupiu įrašymas į failus:
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/c3da2164-c7ab-4678-b445-a332b6fd8dac)
+
+>Studentų rūšiavimą į dvi grupes: 80.331 sekundes
+>Grupiu įrašymas į failus:
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/f197c1d4-3e1e-4ccd-9ebe-a56f9eba0c62)
+
+>Studentų rūšiavimą į dvi grupes: 80.331 sekundes
+>Grupiu įrašymas į failus:
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/df332625-d459-43ed-a05a-f0e233be216f)
+
+>Studentų rūšiavimą į dvi grupes: 80.331 sekundes
+>Grupiu įrašymas į failus:
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/f3f24168-310f-4e58-a2e2-4043458e36c0)
+
+>Studentų rūšiavimą į dvi grupes: 80.331 sekundes
+>Grupiu įrašymas į failus:
