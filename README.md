@@ -96,3 +96,5 @@ Grupiu įrašymas į failus: 42.9918 sekundes
 | 100000 | 0.43132166666 | 0.42941333333 |
 | 1000000 | 4.11383333333 | 4.18043333333 |
 | 10000000 | 42.7793666667 | 42.9918 |
+
+Naudojant std::List vietoj std::Vector sparta, musu atvėju, keičiasi tik dalijant i 2gr(Pvz. 100000 atvėju). Tada List veikia greiciau nei Vector. Tačiau skirtumas tarp šių konteineriu neryškus.
