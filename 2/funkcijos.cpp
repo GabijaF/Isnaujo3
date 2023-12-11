@@ -5,6 +5,8 @@
 #include <sstream>
 
 
+
+
 int generuotiNdBala() {
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -51,5 +53,6 @@ double skaiciuotiGalutiniBala(const Studentas& studentas, char baloSkaiciavimoBu
     double galutinisBalas = (0.4 * NdBalas + 0.6 * studentas.egz);
     return galutinisBalas;
 }
+
 
 
