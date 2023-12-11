@@ -1,4 +1,4 @@
-#include "funkcijos.h"
+#include "funkcijosl.h"
 #include <fstream>
 #include <algorithm>
 #include <random>
