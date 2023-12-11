@@ -8,7 +8,7 @@
 int main() {
     std::vector<Studentas> studentai;
     std::vector<Studentas> vargsiukai;
-    std::vector<Studentas> galvociai;
+    
 
     char pasirinkimas;
     std::cout << "Ar norite ivesti duomenis ranka (R) ar skaityti is failo (F)? ";
