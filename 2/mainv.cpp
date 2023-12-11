@@ -5,14 +5,13 @@
 #include <iomanip>
 
 
-
 int main() {
     std::vector<Studentas> studentai;
     std::vector<Studentas> vargsiukai;
     std::vector<Studentas> galvociai;
 
     char pasirinkimas;
-    std::cout << "Ar norite ivesti duomenis (R) ar skaityti is failo (F)? ";
+    std::cout << "Ar norite ivesti duomenis ranka (R) ar skaityti is failo (F)? ";
     std::cin >> pasirinkimas;
 
     //auto startReading = std::chrono::high_resolution_clock::now();
@@ -90,11 +89,11 @@ int main() {
         std::chrono::duration<double> sortTime = endSortTime - startSortTime;
 
         char rikiavimas;
-        std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti (Y/N)? ";
+        std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti pagal galutini bala (Y/N)? ";
         std::cin >> rikiavimas;
 
         if (rikiavimas == 'Y' || rikiavimas == 'y') {
-            std::cout << "Kaip norite surikiuoti rezultatus - didziausi pirma (D) ar maziausi pirma (M)? ";
+            std::cout << "Kaip norite surikiuoti rezultatus - nuo didziausio (D) ar nuo maziausio (M)? ";
             char rikiavimoBudas;
             std::cin >> rikiavimoBudas;
 
@@ -131,7 +130,7 @@ int main() {
         std::cout << "Failo isvedimas i galvociai uztruko: " << writeGalvociaiTime.count() << " sekundes" << std::endl;
 
 
-        // Output table for galvociai in the terminal
+        
         auto startWriteVargsiukaiTime = std::chrono::high_resolution_clock::now();
 
         std::ofstream vargsiukaiFile("vargsiukai.txt");
@@ -162,8 +161,6 @@ int main() {
             char baloSkaiciavimoBudas;
             std::cout << "Kaip norite skaiciuoti galutini bala pagal vidurki (V) ar pagal mediana (M)? ";
             std::cin >> baloSkaiciavimoBudas;
-
-
 
 
 
@@ -208,12 +205,12 @@ int main() {
             auto endSortTime = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double> sortTime = endSortTime - startSortTime;
 
-            std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti (Y/N)? ";
+            std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti pagal galutini bala (Y/N)? ";
             char rikiavimas;
             std::cin >> rikiavimas;
 
             if (rikiavimas == 'Y' || rikiavimas == 'y') {
-                std::cout << "Kaip norite surikiuoti rezultatus - didziausi pirma (D) ar maziausi pirma (M)? ";
+                std::cout << "Kaip norite surikiuoti rezultatus - nuo didziausio (D) ar nuo maziausio (M)? ";
                 char rikiavimoBudas;
                 std::cin >> rikiavimoBudas;
 
