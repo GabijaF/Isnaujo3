@@ -1,9 +1,8 @@
-#include "funkcijos.h"
+#include "funkcijosl.h"
 #include <chrono>
 #include <algorithm>
 #include <fstream>
 #include <iomanip>
-
 
 
 int main() {
@@ -90,11 +89,11 @@ int main() {
         std::chrono::duration<double> sortTime = endSortTime - startSortTime;
 
         char rikiavimas;
-        std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti (Y/N)? ";
+        std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti pagal galutini bala (Y/N)? ";
         std::cin >> rikiavimas;
 
         if (rikiavimas == 'Y' || rikiavimas == 'y') {
-            std::cout << "Kaip norite surikiuoti rezultatus - didziausi pirma (D) ar maziausi pirma (M)? ";
+            std::cout << "Kaip norite surikiuoti rezultatus - nuo didziausio (D) ar nuo maziausio (M)? ";
             char rikiavimoBudas;
             std::cin >> rikiavimoBudas;
 
@@ -165,8 +164,6 @@ int main() {
 
 
 
-
-
             auto startReadFileTime = std::chrono::high_resolution_clock::now();
 
             std::string eilute;
@@ -208,12 +205,12 @@ int main() {
             auto endSortTime = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double> sortTime = endSortTime - startSortTime;
 
-            std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti (Y/N)? ";
+            std::cout << "Ar norite, kad galutiniai rezultatai butu surikiuoti pagal galutini bala (Y/N)? ";
             char rikiavimas;
             std::cin >> rikiavimas;
 
             if (rikiavimas == 'Y' || rikiavimas == 'y') {
-                std::cout << "Kaip norite surikiuoti rezultatus - didziausi pirma (D) ar maziausi pirma (M)? ";
+                std::cout << "Kaip norite surikiuoti rezultatus - nuo didziausio (D) ar nuo maziausio (M)? ";
                 char rikiavimoBudas;
                 std::cin >> rikiavimoBudas;
 
