@@ -1,10 +1,8 @@
-#include "funkcijos.h"
+#include "funkcijosl.h"
 #include <fstream>
 #include <algorithm>
 #include <random>
 #include <sstream>
-
-
 
 
 int generuotiNdBala() {
