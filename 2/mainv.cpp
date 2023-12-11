@@ -195,14 +195,15 @@ int main() {
 
             auto startSortTime = std::chrono::high_resolution_clock::now();
 
-            for (const Studentas& studentas : studentai) {
-                double galutinisBalas = skaiciuotiGalutiniBala(studentas, baloSkaiciavimoBudas);
-                if (galutinisBalas < 5.0) {
-                    vargsiukai.push_back(studentas);
-                } else {
-                    galvociai.push_back(studentas);
-                }
+            for (auto it = studentai.begin(); it != studentai.end();) {
+            double galutinisBalas = skaiciuotiGalutiniBala(*it, baloSkaiciavimoBudas);
+            if (galutinisBalas < 5.0) {
+                vargsiukai.push_back(std::move(*it));
+                it = studentai.erase(it);
+            } else {
+                ++it;
             }
+        }
             auto endSortTime = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double> sortTime = endSortTime - startSortTime;
 
