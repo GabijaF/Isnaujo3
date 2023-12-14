@@ -15,12 +15,12 @@ int main() {
     std::cout << "Ar norite ivesti duomenis (R) ar skaityti is failo (F)? ";
     std::cin >> pasirinkimas;
 
-    //auto startReading = std::chrono::high_resolution_clock::now();
+    
 
     if (pasirinkimas == 'R' || pasirinkimas == 'r') {
         Studentas naujasStudentas;
         naujasStudentas.address = &naujasStudentas;
-        //std::cout << "adresas:" << &naujasStudentas << std::endl;
+        std::cout << "adresas:" << &naujasStudentas << std::endl;
 
         do {
             std::cout << "Iveskite studento varda: ";
@@ -101,10 +101,10 @@ int main() {
                 return skaiciuotiGalutiniBala(a, baloSkaiciavimoBudas) > skaiciuotiGalutiniBala(b, baloSkaiciavimoBudas);
             };
 
-            // Sorting vargsiukai
+            
             std::sort(vargsiukai.begin(), vargsiukai.end(), compareByFinalGrade);
 
-            // Sorting galvociai
+            
             std::sort(galvociai.begin(), galvociai.end(), compareByFinalGrade);
         }
 
@@ -130,7 +130,7 @@ int main() {
         std::cout << "Failo isvedimas i galvociai uztruko: " << writeGalvociaiTime.count() << " sekundes" << std::endl;
 
 
-        // Output table for galvociai in the terminal
+        
         auto startWriteVargsiukaiTime = std::chrono::high_resolution_clock::now();
 
         std::ofstream vargsiukaiFile("vargsiukai.txt");
@@ -220,10 +220,9 @@ int main() {
                     return skaiciuotiGalutiniBala(a, baloSkaiciavimoBudas) > skaiciuotiGalutiniBala(b, baloSkaiciavimoBudas);
                 };
 
-                // Sorting vargsiukai
+                
                 std::sort(vargsiukai.begin(), vargsiukai.end(), compareByFinalGrade);
 
-                // Sorting galvociai
                 std::sort(galvociai.begin(), galvociai.end(), compareByFinalGrade);
             }
 
@@ -233,14 +232,6 @@ int main() {
 
 
             std::cout << "Failo su " << studentCount << " studentu dalijimas i 2 grupes uztruko: " << sortTime.count() << " sekundes" << std::endl;
-
-
-
-
-
-
-
-
 
 
 
@@ -280,11 +271,6 @@ int main() {
         std::cerr << "Neteisingas pasirinkimas." << std::endl;
         return 1;
     }
-
-    //auto endReading = std::chrono::high_resolution_clock::now();
-    //auto durationReading = std::chrono::duration_cast<std::chrono::seconds>(endReading - startReading);
-
-    //std::cout << "Viso programa uztruko: " << durationReading.count() << " sekundes" << std::endl;
 
     return 0;
 }
