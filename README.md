@@ -16,7 +16,7 @@ pateikta atmintis paleidus kodą su 10 000 000 studentų turinčiu failu:
 ![l1](https://github.com/GabijaF/isnaujo/assets/145053488/0db2feba-5eae-410b-9172-1860910a5072)
 
 
-programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekundėmis): 
+Programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekundėmis): 
 
 ### vector:
 | Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
@@ -39,3 +39,21 @@ programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekund
 ### Išvada: 
 naudojant 1 strategija vector tipas veikia greičiau už list.
 ***
+## 2 strategija
+Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "vargšiukai". Tokiu būdu, jei studentas yra vargšiukas, jį turime įkelti į naująjį "vargšiukų" konteinerį ir ištrinti iš bendro studentai konteinerio. Po šio žingsnio studentai konteineryje liks vien tik galvociai. 
+
+Atminties atveju si strategija efektyvesne:
+
+### vector atveju:
+pateikta atmintis paleidus kodą su 10 000 000 studentų turinčiu failu:
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/15dd976e-c8d4-41a3-997c-1d194448d0f9)
+
+
+### vector atveju:
+pateikta atmintis paleidus kodą su 10 000 000 studentų turinčiu failu:
+
+Programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekundėmis): 
+
+### vector:
+### list:
