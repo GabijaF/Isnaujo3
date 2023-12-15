@@ -45,15 +45,20 @@ Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudoja
 Atminties atveju si strategija efektyvesne:
 
 ### vector atveju:
-pateikta atmintis paleidus kodą su 10 000 000 studentų turinčiu failu:
+pateikta atmintis paleidus kodą su 100 000 studentų turinčiu failu:
 
 ![image](https://github.com/GabijaF/isnaujo/assets/145053488/15dd976e-c8d4-41a3-997c-1d194448d0f9)
 
-
-### vector atveju:
+### list atveju:
 pateikta atmintis paleidus kodą su 10 000 000 studentų turinčiu failu:
 
 Programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekundėmis): 
 
 ### vector:
+| Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
+| ------------- | ------------- | ------------- |-----------------|--------------------|
+| 1000  |  0.0055643| 0.0302857  |   0.001001| 0.0015278 |
+| 10000  | 0.0736229 |2.034884 |0.0095045 |0.0064997 |
+| 100000 | 0.697874 | 221.699 |  0.0922078 |0.0691245 |
+
 ### list:
