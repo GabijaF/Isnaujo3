@@ -1,5 +1,162 @@
 # isnaujo
 nd
+
+# v.pradine
+v.pradinė. generuoja.cpp paleidus koda klausia studento vardo ir pavardes. Poto klausia ar nd pazymius ir egzamino nori ivesti pats ar juos sugeneruoti atsitiktinai. parasius visu studentu duomenis programa paklausia koki galutini rezultata nori matyti vartotojas ar pagal vidurki ar mediana.
+
+# v0.1
+v0.1. tas pats kodas i .h ir .cpp failus ir panaudotas minimalus išimčių valdymas.
+
+# v0.2
+
+kodas nuskaito faila, ir isveda 2 failus: surusiuotus vargsiukai ir galvociai.
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/71e70385-afad-44e5-9b22-8174f87a9419)
+
+
+1bandymas: 0.011086 sekundes
+2bandymas: 0.0149357 sekundes
+3bandymas: 0.0089862 sekundes
+bandymu vidurkis: 0.0116693 sekundes
+
+
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/ad588561-0792-405e-a3af-2c569d4e61ba)
+
+
+1bandymas: 0.1624448 sekundes
+2bandymas: 0.1600233 sekundes
+3bandymas: 0.1597411 sekundes
+bandymu vidurkis: 0.1607364 sekundes
+
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/ac835221-9415-4c34-b6a1-b666c9549161)
+
+
+1bandymas: 1.3445191 sekundes
+2bandymas: 1.3602037 sekundes
+3bandymas: 1.3804005 sekundes
+bandymu vidurkis: 1.36170776667 sekundes
+
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/39f4934e-6867-4ab7-9d78-3c916f9dbc69)
+
+
+1bandymas: 8.52987 sekundes
+2bandymas: 9.06612 sekundes
+3bandymas: 8.902099 sekundes
+bandymu vidurkis: 8.83269633333 sekundes
+
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/3cc7bb5e-87a2-4114-adeb-8250b544bf12)
+
+
+1bandymas: 86.90333 sekundes
+2bandymas: 165.64522 sekundes
+3bandymas: 163.65959 sekundes
+bandymu vidurkis: 138.736046667 sekundes
+
+# v0.3
+## Parametrai
+CPU: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz;
+RAM: 8GB 2667Hz
+SSD: Micron_1100 240GB
+****
+****
+
+### Ištirti:
+ar pasikeistų ir kaip pasikeistų programos sparta, jei vietoje std::vector<Studentai> naudotumėte std::list<Studentai>.
+
+Kadangi tiek failų kūrimas, tiek ir surūšiuotų rezultatų išvedimas į failus nepriklauso nuo naudojamo konteinerio, todėl šioje užduotyje matuosim:
+
+* studentų rūšiavimą į dvi grupes;
+* duomenų įrašymas į failus;
+
+Matuosime kiekviena konteinerį su 5 skirtingais failais po 3 kartus pagal vidurkį ir pateiksime vidurkius.
+****
+****
+
+## std::vector
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/ae041291-22f2-4c57-aadf-743f88352f88)
+
+Studentų rūšiavimą į dvi grupes: 0.001335233336 sekundes <br>
+Grupiu įrašymas į failus: 0.0063387 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/5f0e53a0-27b0-4cd8-b0e8-5794c7469ba0)
+
+Studentų rūšiavimą į dvi grupes: 0.0418005 sekundes <br>
+Grupiu įrašymas į failus: 0.03963506666 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/34585652-e1bb-4ff7-82a8-5b7303aa7f48)
+
+Studentų rūšiavimą į dvi grupes: 0.40813933333 sekundes <br>
+Grupiu įrašymas į failus: 0.43132166666 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/1cf892c4-9062-4726-a8ce-4ad40e2e6ef8)
+
+Studentų rūšiavimą į dvi grupes: 3.96838666667 sekundes <br>
+Grupiu įrašymas į failus: 4.11383333333 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/58a82b59-2c45-4f4d-b383-cdba6638bcb9)
+
+
+Studentų rūšiavimą į dvi grupes: 41.8671333333 sekundes <br>
+Grupiu įrašymas į failus: 42.7793666667 sekundes
+****
+
+
+## std::list
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/813bdc28-7693-426a-a244-991b3128ed27)
+
+Studentų rūšiavimą į dvi grupes: 0.0051837 sekundes <br>
+Grupiu įrašymas į failus: 0.00904976666 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/c3da2164-c7ab-4678-b445-a332b6fd8dac)
+
+Studentų rūšiavimą į dvi grupes: 0.0426777 sekundes <br>
+Grupiu įrašymas į failus: 0.0399025 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/f197c1d4-3e1e-4ccd-9ebe-a56f9eba0c62)
+
+Studentų rūšiavimą į dvi grupes: 0.41334333333 sekundes <br>
+Grupiu įrašymas į failus: 0.42941333333 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/df332625-d459-43ed-a05a-f0e233be216f)
+
+Studentų rūšiavimą į dvi grupes: 4.02931666667 sekundes <br>
+Grupiu įrašymas į failus: 4.18043333333 sekundes
+
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/f3f24168-310f-4e58-a2e2-4043458e36c0)
+
+Studentų rūšiavimą į dvi grupes: 42.0294333333 sekundes <br>
+Grupiu įrašymas į failus: 42.9918 sekundes
+****
+****
+
+# Palyginimas
+
+| Studentu sk.  | Rusiavimas(v) | Rusiavimas(l)|
+| ------------- | ------------- | ------------- |
+| 1000  | 0.001335233336 | 0.0051837 |
+| 10000  | 0.0418005  | 0.0426777 |
+| 100000 | 0.40813933333 | 0.41334333333 |
+| 1000000 | 3.96838666667 | 4.02931666667 |
+| 10000000 | 41.8671333333 | 42.0294333333 |
+
+
+| Studentu sk.  | Dalijimas i 2gr(v) | Dalijimas i gr(l)|
+| ------------- | ------------- | ------------- |
+| 1000  | 0.0063387 | 0.00904976666 |
+| 10000  | 0.03963506666  | 0.0399025 |
+| 100000 | 0.43132166666 | 0.42941333333 |
+| 1000000 | 4.11383333333 | 4.18043333333 |
+| 10000000 | 42.7793666667 | 42.9918 |
+
+Naudojant std::List vietoj std::Vector sparta, musu atvėju, keičiasi tik dalijant i 2gr(Pvz. 100000 atvėju). Tada List veikia greiciau nei Vector. Tačiau skirtumas tarp šių konteineriu neryškus.
+
+# v0.1 
 ## 1 strategija
 Bendro studentai konteinerio (vector ir list tipų) skaidymas į du naujus to paties tipo konteinerius: "vargšiukų" ir "galvociu". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (vargšiukai arba galvociu).
 
