@@ -1,8 +1,5 @@
 # isnaujo
 nd
-
-https://github.com/GabijaF/isnaujo/tree/v0.1?tab=readme-ov-file#isnaujo
-
 ## 1 strategija
 Bendro studentai konteinerio (vector ir list tipų) skaidymas į du naujus to paties tipo konteinerius: "vargšiukų" ir "galvociu". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (vargšiukai arba galvociu).
 
