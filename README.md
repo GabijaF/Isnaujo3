@@ -42,7 +42,7 @@ naudojant 1 strategija vector tipas veikia greičiau už list.
 ## 2 strategija
 Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "vargšiukai". Tokiu būdu, jei studentas yra vargšiukas, jį turime įkelti į naująjį "vargšiukų" konteinerį ir ištrinti iš bendro studentai konteinerio. Po šio žingsnio studentai konteineryje liks vien tik galvociai. 
 
-Atminties atveju si strategija efektyvesne:
+Atminties atveju si strategija efektyvesne, tačiau dažni trynimai gali būti "skausmingi", vector tipo konteineriams.
 
 ### vector atveju:
 pateikta atmintis paleidus kodą su 100 000 studentų turinčiu failu:
@@ -62,3 +62,62 @@ Programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekund
 | 100000 | 0.697874 | 221.699 |  0.0922078 |0.0691245 |
 
 ### list:
+| Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
+| ------------- | ------------- | ------------- |-----------------|--------------------|
+| 1000  |  0.0038108| 0.0025442  | 0.0150123| 0.0360239 |
+| 10000  | 0.101188 |0.01624 | 0.0095302  |0.0164752  |
+| 100000 | 2.36938 | 0.380681 |  0.184752 |0.271983|
+| 1000000  |  4.79024| 0.728885 | 0.792867| 1.06198 |
+| 10000000  | 37.775 |7.8761  |8.46732 |10.7526  |
+
+### Išvada: 
+naudojant 2 strategija list tipas veikia greičiau už vector.
+***
+## 3 strategija
+Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant greičiausiai veikiancia 1 strategiją, įtraukiant į ją "efektyvius" darbo su konteineriais metodus (naudosime copy_if, remove_copy_if, stable_partition).
+
+Visus 3 algoritmus pritaikysim vector tipui, ir issirinksime greiciausiai veikianti, kuri pritaikysim ir list tipui.
+
+Programos veikimo sparta su list ir vector konteineriais(laikas pateiktas sekundėmis): 
+
+### vector copy_if:
+| Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
+| ------------- | ------------- | ------------- |-----------------|--------------------|
+| 1000  |   0.0060114 | 0.0010008  | 0.0020004| 0 |
+| 10000  |0.0560198  |0.0080422 | 0.0069968  |0.0100863  |
+| 100000 | 0.673109  | 0.0806257 | 0.0662875 |0.0910801|
+| 1000000  | 3.63352| 0.566676 | 0.588548| 0.883478 |
+| 10000000  | 29.162 |5.5803 |6.39421 |8.1343  |
+
+### vector remove_copy_if:
+| Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
+| ------------- | ------------- | ------------- |-----------------|--------------------|
+| 1000  | 0.0030174  |0.0049813  | 0.0019977 | 0.0010005  |
+| 10000  |0.0645132   |0.0090003 | 0.0059997  |0.0099959  |
+| 100000 | 0.671475   | 0.0806397 |0.0655182 |0.0826068|
+| 1000000  |  3.62926 | 0.581576  | 0.600415| 0.864768|
+| 10000000  | 28.8801  |5.61558 |6.407  |8.09974  |
+
+### vector stable_partition:
+| Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
+| ------------- | ------------- | ------------- |-----------------|--------------------|
+| 1000  | 0.0050357   |0.0010046  | 0.0020014 | 0.0010036  |
+| 10000  |0.06951   |0.007  |0.0069991 |0.0110247 |
+| 100000 | 0.687185    | 0.0715817 |0.0656571 |0.0936633|
+| 1000000  |  3.65286| 0.554817  | 0.612013 | 0.869332|
+| 10000000  | 28.9634   |5.60472 |6.38962   |8.08078  |
+
+pastebime, kad stable_partition veikia greiciausiai todel ji pritaikysime ir list tipui:
+
+### list stable_partition:
+| Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius|
+| ------------- | ------------- | ------------- |-----------------|--------------------|
+| 1000  | 0.0030001  |0.0010006  | 0.0020002 | 0.0009913  |
+| 10000  |0.0945954  |0.0255504 |0.0069999 |0.0110295 |
+| 100000 | 1.11831  | 0.330492 |0.0740337 | 0.104791|
+| 1000000  | 4.37306| 1.49957  | 0.622037 |  0.927994|
+| 10000000  | 34.2783   |36.5723 |16.304  |11.792 |
+
+### isvada:
+Programos efektyvumas stipriai gali priklausyti ne tik nuo naudojamo konteinerio tipo, tačiau ir nuo naudojamų algoritmų.
+***
