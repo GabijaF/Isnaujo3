@@ -2,8 +2,18 @@
 nd
 
 # Paleidimas
-1. Parsisiunčiame [visas](https://github.com/GabijaF/isnaujo/tree/f9d4ac6c593da81b30665539baefc57d98618c1b/visas) aplankala is v1.0.
-2. 
+1. Parsisiunčiame [visas](https://github.com/GabijaF/isnaujo/tree/f9d4ac6c593da81b30665539baefc57d98618c1b/visas) aplanka is v1.0.
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/df9c5f34-da87-4d06-a8a4-a080da43b587)
+2.  Paleidžiame PowerShell
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/c2988d91-7b9e-44fb-a3d4-abd08fb10937)
+3. Ir jame parašome https://github.com/GabijaF/isnaujo/blob/9d3f114b5aed6c362da25b11968374fba4fd867d/visas/RUNMME.bat paeiliui jo stulpelius.
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/6f47ae50-46c9-42d7-a4cf-410b9109bebe)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/f6bb0220-dd43-4240-939e-12ec0f664069)
+4. Mūsų failas 'visas' prisipildė aplankais kurie reikalingi programos paleidimui. Atidarome Debug aplanka ir paleidžiame programa.
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/9ffd81a8-81d2-44fe-8234-5a7af39509cc)
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/d503ed03-22ad-420f-895c-a5d2c0d94efb)
+5. Programai baigusji užsidaro.
+![image](https://github.com/GabijaF/isnaujo/assets/145053488/39e93764-7253-44f3-b6aa-a6a9824e76c6)
 
 # v.pradine
 v.pradinė. generuoja.cpp paleidus koda klausia studento vardo ir pavardes. Poto klausia ar nd pazymius ir egzamino nori ivesti pats ar juos sugeneruoti atsitiktinai. parasius visu studentu duomenis programa paklausia koki galutini rezultata nori matyti vartotojas ar pagal vidurki ar mediana.
