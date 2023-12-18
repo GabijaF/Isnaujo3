@@ -2,7 +2,7 @@
 nd
 
 # Paleidimas
-1. Parsisiunčiame visas aplankala is v1.0.
+1. Parsisiunčiame [visas](https://github.com/GabijaF/isnaujo/tree/f9d4ac6c593da81b30665539baefc57d98618c1b/visas) aplankala is v1.0.
 2. 
 
 # v.pradine
