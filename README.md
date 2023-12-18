@@ -6,7 +6,7 @@ nd
 ![image](https://github.com/GabijaF/isnaujo/assets/145053488/df9c5f34-da87-4d06-a8a4-a080da43b587)
 2.  Paleidžiame PowerShell
 ![image](https://github.com/GabijaF/isnaujo/assets/145053488/c2988d91-7b9e-44fb-a3d4-abd08fb10937)
-3. Ir jame parašome https://github.com/GabijaF/isnaujo/blob/9d3f114b5aed6c362da25b11968374fba4fd867d/visas/RUNMME.bat paeiliui jo stulpelius.
+3. Ir jame parašome RUNMME.bat paeiliui esantį tekstą.
 ![image](https://github.com/GabijaF/isnaujo/assets/145053488/6f47ae50-46c9-42d7-a4cf-410b9109bebe)
 ![image](https://github.com/GabijaF/isnaujo/assets/145053488/f6bb0220-dd43-4240-939e-12ec0f664069)
 4. Mūsų failas 'visas' prisipildė aplankais kurie reikalingi programos paleidimui. Atidarome Debug aplanka ir paleidžiame programa.
