@@ -29,6 +29,7 @@ Struct veikia siek tiek greiciau.
 | 1000000  |20.8662| 1.60295 |   2.14893 | 3.08448 | 27.7026|
 
 ### Class
+![image](https://github.com/GabijaF/Isnaujo2/assets/145053488/df76232f-3ce2-48dc-927b-2052e54e2882)
  Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius| Is viso|
 | ------------- | ------------- | ------------- |-----------------|--------------------|--------------------|--------------------|
 | 100000 | 0.41854  |0.0600662 |0.064131 | 0.0882329| 0.63097|
@@ -44,10 +45,11 @@ Struct veikia siek tiek greiciau.
 | 1000000  |20.9151| 1.54069 |   2.17191 | 3.20858| 27.8362|
 
 ### Class
+![image](https://github.com/GabijaF/Isnaujo2/assets/145053488/471ec0dc-d5be-427c-8352-fc6edcd2f637)
  Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius| Is viso|
 | ------------- | ------------- | ------------- |-----------------|--------------------|--------------------|
-| 100000 | 0.41854  |0.0600662 |0.064131 | 0.0882329| 0.63097|
-| 1000000  |4.02373|  0.603228|  0.630075 |  0.924991| 6.18203|
+| 100000 | 6.39843 |0.164813 |0.263173  | 0.353715| 7.18013 |
+| 1000000  |29.4474| 1.6424 |   2.51778 | 3.6687| 37.2764|
 
 ##  flag O3
 
@@ -59,6 +61,7 @@ Struct veikia siek tiek greiciau.
 | 1000000  |20.9074| 1.58502  |  2.11864  | 3.16222| 27.7733 |
 
 ### Class
+![image](https://github.com/GabijaF/Isnaujo2/assets/145053488/dc31dfb1-5aa4-455d-b152-11a198757181)
  Studentu sk.  |Nuskaitymas | Dalijimas| Išvėdimas į vargšiukus| Išvėdimas į galvočius| Is viso|
 | ------------- | ------------- | ------------- |-----------------|--------------------|--------------------|
 | 100000 | 0.41854  |0.0600662 |0.064131 | 0.0882329| 0.63097|
