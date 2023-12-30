@@ -5,7 +5,8 @@ Triju metodu taisyklei, reikia:
 *  Destructor
 * Copy constructor
 * Copy assignment operator
-  
+
+
 Ju realizacija mano kode:
 ![image](https://github.com/GabijaF/Isnaujo2/assets/145053488/26c22e2c-c7ec-43c1-99d9-dd7368ddac47)
 
