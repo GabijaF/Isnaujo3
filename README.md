@@ -5,7 +5,7 @@ Triju metodu taisyklei, reikia:
 > Destructor
 > Copy constructor
 > Copy assignment operator
-Ju realizacija mano kode(https://github.com/GabijaF/Isnaujo2/blob/017d6afde2ca5ca7d2a2ea7a3164f61c7c8d1d83/kodas/f.h arba https://github.com/GabijaF/Isnaujo2/blob/017d6afde2ca5ca7d2a2ea7a3164f61c7c8d1d83/kodas/h.h):
+Ju realizacija mano kode(kodas/h.cpp arba kodas/f.cpp):
 ![image](https://github.com/GabijaF/Isnaujo2/assets/145053488/26c22e2c-c7ec-43c1-99d9-dd7368ddac47)
 
 pvz:
