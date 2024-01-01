@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(1_5)
+project(visas)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -21,4 +21,3 @@ add_executable(1_5
         vektorius.cpp
         zmogus.h)
 
-add_subdirectory(test)
