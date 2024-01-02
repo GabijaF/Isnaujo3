@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(1_5
+add_executable(visas
         f.cpp
         f.h
         h.cpp
